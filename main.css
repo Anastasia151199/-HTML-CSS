@@ -1,0 +1,98 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Стилизация заголовков */
+h1,
+h2 {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: darkblue;
+    font-size: 32px;
+}
+
+h2 {
+    border-bottom: 1px solid #ccc;
+    width: fit-content;
+    display: inline-block;
+    position: relative;
+    top: 12px;
+}
+
+/* Шрифты и цвета для основного текста */
+p {
+    line-height: 1.5;
+    max-width: 600px;
+}
+
+/* Контейнеры */
+.container {
+    max-width: 1200px;
+    overflow: hidden;
+    padding: 0 40px;
+    margin: auto;
+}
+
+/* Заголовок страницы */
+header {
+    background: lightsteelblue;
+    text-align: center;
+    height: 100vh;
+    min-height: 400px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+/* Разделы основной части */
+main section {
+    display: block;
+    float: left;
+    clear: both;
+    border-top: 1px solid rgba(128, 128, 128, .25);
+    padding: 30px 0;
+}
+
+/* Адресная информация */
+address {
+    white-space: pre-line;
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    background: #ddd;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    opacity: 0.9;
+    transition: all 300ms ease-in-out;
+    transform: translateY(-50%);
+    position: fixed;
+    cursor: pointer;
+}
+
+footer:hover {
+    transform: translateY(0);
+    opacity: 1;
+}
